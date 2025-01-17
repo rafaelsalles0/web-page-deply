@@ -7,6 +7,6 @@ spec:
     app: meudeployment
   ports:
     - protocol: TCP
-      port: 8080        # Porta externa
+      port: 80        # Porta externa
       targetPort: 80    # Porta interna usada pelo contêiner
   type: NodePort
