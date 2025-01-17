@@ -7,6 +7,6 @@ spec:
     app: meudeployment
   ports:
     - protocol: TCP
-      port: 80        # Porta externa
-      targetPort: 80    # Porta interna usada pelo contêiner
+      port: 8081        # Porta externa usada para acessar o NGINX
+      targetPort: 80    # Porta interna do contêiner
   type: NodePort
