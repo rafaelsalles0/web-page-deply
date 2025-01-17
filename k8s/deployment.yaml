@@ -13,7 +13,7 @@ spec:
         app: meudeployment
     spec:
       containers:
-        - name: web
-          image: rafaelsallesdev/conversao-temperatura:v1
+        - name: nginx
+          image: nginx:latest  # Imagem oficial do NGINX
           ports:
-          - containerPort: 80
+            - containerPort: 80  # Porta interna do contêiner usada pelo NGINX
